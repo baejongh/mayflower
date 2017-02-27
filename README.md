@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/baejongh/mayflower.png?label=ready&title=Ready)](https://waffle.io/baejongh/mayflower)
 
      ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
     '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
