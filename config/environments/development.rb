@@ -41,4 +41,7 @@ Rails.application.configure do
   
   #some devise thing... ensure we have a defined default url
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  
+  # thing that the tutorial told us to do
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end

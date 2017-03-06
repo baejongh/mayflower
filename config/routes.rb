@@ -1,12 +1,18 @@
 Rails.application.routes.draw do
+  #devise_for :users
+  ActiveAdmin.routes(self)
   #get 'static_pages/userProfile'
 
   #devise_for :users
 
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register', edit: 'settings' }
+  #devise_for :users, controllers: {sessions: 'users/sessions', registrations: 'users/registrations', passwords: 'users/passwords'}, path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register', edit: 'settings'}
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root :to => redirect("/login")
+  
+
+  
 
   get '/home', to: 'application#home', as: 'home'
   get '/secret', to: 'application#secret', as: 'secret'
