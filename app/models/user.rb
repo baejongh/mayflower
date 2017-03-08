@@ -8,7 +8,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   
   def role?(r)
-  role.include? r.to_s
-end
+    role.include? r.to_s
+  end
   
 end
